@@ -2,7 +2,7 @@
   "components": {
       "header": {
           "home": "Startseite",
-          "about": "Über uns
+          "about": "Über uns"
       },
       "home": {
           "comingSoon": {
