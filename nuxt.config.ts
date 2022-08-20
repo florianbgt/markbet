@@ -1,9 +1,22 @@
 import { defineNuxtConfig } from 'nuxt'
 import availableLocales from './locales/availableLocales'
 
+let routes = []
+
+availableLocales.forEach(locale => {
+    routes.push(`/${locale}/`)
+    routes.push(`/${locale}/results/`)
+    routes.push(`/${locale}/about/`)
+})
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     target: 'static',
+    nitro: {
+        prerender: {
+            routes
+        }
+    },
     generate: {
         routes: [
             '/',
@@ -13,7 +26,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
         '@intlify/nuxt3',
-        './modules/generateLocaleRoutes'
+        './modules/generate-locale-routes'
     ],
     localRoutesGenerator: {
         availableLocales
