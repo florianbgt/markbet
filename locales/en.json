@@ -2,21 +2,32 @@
     "components": {
         "header": {
             "home": "Home",
-            "about": "About"
+            "results": "Results",
+            "about": "About us"
         },
-        "home": {
-            "comingSoon": {
-                "comingSoon": "Keep posted<br>We are coming soon!"
-            },
-            "welcome": {
-                "intro": "Browse and buy bets<br>from the best bettors in town"
-            },
-            "whatWeDo": {
-                "whatWeDo": "We aim to shake up<br>the way you bet!",
-                "learnMore": "Learn more here"
+        "bet": {
+            "odds": "odds",
+            "vs": "vs",
+            "sports": {
+                "football": "Football",
+                "basketball": "Basketball",
+                "Tennis": "Tennis"
             }
         },
+        "home": {
+            "todayBet": "Today's bet | Today's bets"
+        },
+        "results": {
+            "headline": {
+                "title": "\"Gambling is not about how well you play the games, it's really about how well you handle your money.\"",
+                "from": "V.P. Pappy"
+            },
+            "pastBet": "Past bet | Past bets"
+        },
         "about": {
+            "whatWeDo": {
+                "whatWeDo": "We aim to shake up<br>the way you bet!"
+            },
             "bettor": {
                 "experienceBettor": "Are you an experience bettor?",
                 "helpCommunity": "Help the community by selling your expertize",

@@ -1,7 +1,8 @@
 <template>
     <div>
-        <AboutHeadline/>
+        <AboutWhatWeDo/>
         <AboutUser/>
         <AboutBettor/>
+        <AboutHeadline/>
     </div>
 </template>

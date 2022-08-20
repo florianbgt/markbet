@@ -4,6 +4,9 @@
             <Link to="/" variant="light" size="lg" class="mx-1">
                 {{ $t('components.header.home') }}
             </Link>
+            <Link to="/results" variant="light" size="lg" class="mx-1">
+                {{ $t('components.header.results') }}
+            </Link>
             <Link to="/about" variant="light" size="lg" class="mx-1">
                 {{ $t('components.header.about') }}
             </Link>
@@ -18,6 +21,9 @@
             <div class="container flex items-center mx-1 mt-2">
                 <Link @click="scrollTop()" to="/" variant="dark" size="lg" class="mx-1">
                     {{ $t('components.header.home') }}
+                </Link>
+                <Link @click="scrollTop()" to="/results" variant="dark" size="lg" class="mx-1">
+                    {{ $t('components.header.results') }}
                 </Link>
                 <Link @click="scrollTop()" to="/about" variant="dark" size="lg" class="mx-1">
                     {{ $t('components.header.about') }}
