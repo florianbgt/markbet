@@ -12,6 +12,10 @@
                 "football": "Football",
                 "basketball": "Basketball",
                 "Tennis": "Tennis"
+            },
+            "result": {
+                "total": "Total of {count} goal | Total of {count} goals",
+                "corner": "{name} score the most corners"
             }
         },
         "home": {

@@ -20,7 +20,7 @@
                         minute: 'numeric'
                     })}}
                 </div>
-                {{bet.sport}}
+                {{bet.sport}} -
                 <span class="text-primary">
                     {{bet.competition}}
                 </span>
@@ -33,8 +33,7 @@
                 {{bet.team2}}
             </div>
             <div class="text-lg text-center">
-                {{bet.category}}:
-                <span class="font-bold">{{bet.result}}</span>
+                {{bet.result}}
             </div>
             <div class="text-lg text-end">
                 <span class="text-primary font-bold">
@@ -55,7 +54,6 @@ defineProps<{
         competition: string;
         team1: string;
         team2: string;
-        category: string;
         result: string;
         odds: string;
     }>

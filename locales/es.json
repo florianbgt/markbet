@@ -1,45 +1,60 @@
 {
-  "components": {
-      "header": {
-          "home": "Home",
-          "about": "About"
-      },
-      "home": {
-          "comingSoon": {
-              "comingSoon": "Keep posted<br>We are coming soon!"
-          },
-          "welcome": {
-              "intro": "Browse and buy bets<br>from the best bettors in town"
-          },
-          "whatWeDo": {
-              "whatWeDo": "We aim to shake up<br>the way you bet!",
-              "learnMore": "Learn more here"
-          }
-      },
-      "about": {
-          "bettor": {
-              "experienceBettor": "Are you an experience bettor?",
-              "helpCommunity": "Help the community by selling your expertize",
-              "list": {
-                  "1": "Screenshot proof, no more leaks!",
-                  "2": "Expand your community by providing them the best in class user experience",
-                  "3": "An amazing dashboard for you. Accessible from your laptop and your phone",
-                  "4": "Fully secure using the latest web technologies"
-              }
-          },
-          "headline": {
-              "ready": "Ready to bet?",
-              "weAreWaiting": "We are waiting for you."
-          },
-          "user": {
-              "wantToBet": "Want to get into beting?",
-              "hereToHelp": "We are here to help!",
-              "list": {
-                  "1": "Latest bets from the best professionals",
-                  "2": "No more bullshit! We do independent statistics and analysis",
-                  "3": "A mobile app simple to use"
-              }
-          }
-      }
-  }
+    "components": {
+        "header": {
+            "home": "Home",
+            "results": "Results",
+            "about": "About us"
+        },
+        "bet": {
+            "odds": "odds",
+            "vs": "vs",
+            "sports": {
+                "football": "Football",
+                "basketball": "Basketball",
+                "Tennis": "Tennis"
+            },
+            "result": {
+                "total": "Total of {count} goal | Total of {count} goals",
+                "corner": "{name} score the most corners"
+            }
+        },
+        "home": {
+            "todayBet": "Today's bet | Today's bets"
+        },
+        "results": {
+            "headline": {
+                "title": "\"Gambling is not about how well you play the games, it's really about how well you handle your money.\"",
+                "from": "V.P. Pappy"
+            },
+            "pastBet": "Past bet | Past bets"
+        },
+        "about": {
+            "whatWeDo": {
+                "whatWeDo": "We aim to shake up<br>the way you bet!"
+            },
+            "bettor": {
+                "experienceBettor": "Are you an experience bettor?",
+                "helpCommunity": "Help the community by selling your expertize",
+                "list": {
+                    "1": "Screenshot proof, no more leaks!",
+                    "2": "Expand your community by providing them the best in class user experience",
+                    "3": "An amazing dashboard for you. Accessible from your laptop and your phone",
+                    "4": "Fully secure using the latest web technologies"
+                }
+            },
+            "headline": {
+                "ready": "Ready to bet?",
+                "weAreWaiting": "We are waiting for you."
+            },
+            "user": {
+                "wantToBet": "Want to get into beting?",
+                "hereToHelp": "We are here to help!",
+                "list": {
+                    "1": "Latest bets from the best professionals",
+                    "2": "No more bullshit! We do independent statistics and analysis",
+                    "3": "A mobile app simple to use"
+                }
+            }
+        }
+    }
 }

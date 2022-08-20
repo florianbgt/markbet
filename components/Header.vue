@@ -1,31 +1,31 @@
 <template>
     <div id="main" class="w-full bg-dark flex justify-center shadow-lg">
         <div class="container flex items-center mx-2">
-            <Link to="/" variant="light" size="lg" class="mx-1">
+            <Link :to="`/${locale}/`" variant="light" size="lg" class="mx-1">
                 {{ $t('components.header.home') }}
             </Link>
-            <Link to="/results" variant="light" size="lg" class="mx-1">
+            <Link :to="`/${locale}/results`" variant="light" size="lg" class="mx-1">
                 {{ $t('components.header.results') }}
             </Link>
-            <Link to="/about" variant="light" size="lg" class="mx-1">
+            <Link :to="`/${locale}/about`" variant="light" size="lg" class="mx-1">
                 {{ $t('components.header.about') }}
             </Link>
             <div class="grow flex justify-end">
                 <Language />
             </div>
-            
+            {{$route.name}}
         </div>  
     </div>
     <transition name="slidedown">
         <div v-if="!isVisible" class="hidden lg:flex fixed top-0 left-0 right-0 flex justify-center z-50">
             <div class="container flex items-center mx-1 mt-2">
-                <Link @click="scrollTop()" to="/" variant="dark" size="lg" class="mx-1">
+                <Link @click="scrollTop()" :to="`/${locale}/`" variant="dark" size="lg" class="mx-1">
                     {{ $t('components.header.home') }}
                 </Link>
-                <Link @click="scrollTop()" to="/results" variant="dark" size="lg" class="mx-1">
+                <Link @click="scrollTop()" :to="`/${locale}/results`" variant="dark" size="lg" class="mx-1">
                     {{ $t('components.header.results') }}
                 </Link>
-                <Link @click="scrollTop()" to="/about" variant="dark" size="lg" class="mx-1">
+                <Link @click="scrollTop()" :to="`/${locale}/about`" variant="dark" size="lg" class="mx-1">
                     {{ $t('components.header.about') }}
                 </Link>
             </div>
@@ -40,6 +40,8 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener("scroll", onScroll)
 })
+
+const locale = (useRoute().name as string).split('-')[0]
 
 let isVisible = ref(true)
 

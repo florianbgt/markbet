@@ -49,6 +49,9 @@
 
 <script setup lang="ts">
 import { Ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n({ useScope: 'global' })
 
 const angle: Ref<number> = ref(0)
 onMounted(() => {
@@ -81,22 +84,20 @@ const bets = [
         bets: [
             {
                 date: new Date("2022-05-19T20:00:00Z"),
-                sport: "football",
+                sport: t('components.bet.sports.football'),
                 competition: "Ligue 1",
                 team1: "Paris Saint Germain",
                 team2: "Olympique de Lyon",
-                category: "Total of goal",
-                result: "1",
-                odds: "2"
+                result: t('components.bet.result.total', {count: 1}),
+                odds: "1.25"
             },
             {
                 date: new Date("2022-05-19T21:00:00Z"),
-                sport: "football",
+                sport: t('components.bet.sports.football'),
                 competition: "Ligue 1",
                 team1: "Paris Saint Germain",
                 team2: "Olympique de Lyon",
-                category: "Total of goal",
-                result: "1",
+                result: t('components.bet.result.total', {count: 3}),
                 odds: "3"
             }
         ]
@@ -106,12 +107,11 @@ const bets = [
         bets: [
             {
                 date: new Date("2022-05-19T20:00:00Z"),
-                sport: "football",
+                sport: t('components.bet.sports.football'),
                 competition: "Ligue 1",
                 team1: "Paris Saint Germain",
                 team2: "Olympique de Lyon",
-                category: "Total of goal",
-                result: "1",
+                result: t('components.bet.result.corner', { name: 'Lyon'}),
                 odds: "2"
             }
         ]
