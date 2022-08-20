@@ -13,7 +13,7 @@
                     <button
                         v-for="(language, key) in languages"
                         :key="key"
-                        @click="$i18n.locale = key; setLanguage(key)"
+                        @click="setLanguage(key)"
                         type="button"
                         class="hover:opacity-strong text-lg w-full py-1 rounded-full"
                     >
@@ -34,7 +34,9 @@ const languages = {
 }
 
 const setLanguage = (value: 'en' | 'fr' | 'es' | 'de') => {
-    localStorage.setItem('locale', value)
+    const name: string = useRoute().name as string
+    const currentLocale = name.split('-')[0]
+    useRouter().push({name: name.replace(currentLocale, value)})
     isOpen.value = false
 }
 

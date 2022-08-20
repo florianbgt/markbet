@@ -6,12 +6,7 @@
             data-aos-delay="500"
             data-aos-duration="1000"
         >
-            <p class="text-dark text-center text-title font-bold break-words">
-                {{ $t('components.about.headline.ready') }}
-            </p>
-            <p class="text-primary text-center text-xl font-bold break-words">
-                {{ $t('components.about.headline.weAreWaiting') }}
-            </p>
+            <p v-html="$t('components.about.whatWeDo.whatWeDo')" class="text-dark text-center text-title font-bold break-words"/>
         </div>
     </div>
 </template>

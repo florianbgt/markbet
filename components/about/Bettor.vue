@@ -1,5 +1,5 @@
 <template>
-    <div id="main" class="flex bg-tertiary justify-center shadow-lg">
+    <div class="flex bg-tertiary justify-center shadow-lg min-h-screen">
         <div
             class="container flex flex-col items-center justify-center m-2"
             data-aos="fade-up"
@@ -34,10 +34,3 @@
 
 <script setup lang="ts">
 </script>
-
-
-<style scoped>
-#main {
-    min-height: 100vh;
-}
-</style>

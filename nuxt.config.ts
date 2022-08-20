@@ -1,8 +1,5 @@
 import { defineNuxtConfig } from 'nuxt'
-import en from './locales/en.json'
-import fr from './locales/fr.json'
-import es from './locales/es.json'
-import de from './locales/de.json'
+import availableLocales from './locales/availableLocales'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -15,16 +12,22 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxtjs/tailwindcss',
-        '@intlify/nuxt3'
+        '@intlify/nuxt3',
+        './modules/generateLocaleRoutes'
     ],
+    localRoutesGenerator: {
+        availableLocales
+    },
     tailwindcss: {
         cssPath: '~/assets/css/tailwind.css',
         configPath: 'tailwind.config.ts',
     },
     intlify: {
         vueI18n: {
-            locale: 'en',
-            messages: { en, fr, es, de }
+            locale: availableLocales[0],
+            fallbackLocale: availableLocales[0],
+            availableLocales,
+            sync: true
         }
     },
     css: [

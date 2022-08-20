@@ -1,45 +1,60 @@
 {
-  "components": {
-      "header": {
-          "home": "Accueil",
-          "about": "À propos"
-      },
-      "home": {
-          "comingSoon": {
-              "comingSoon": "Reste dans le coin<br>Nous arrivons bientôt!"
-          },
-          "welcome": {
-              "intro": "Parcours et achètes les paris<br>des meilleurs parieurs du moment"
-          },
-          "whatWeDo": {
-              "whatWeDo": "Nous voulons transformer<br>la manière dont tu paris!",
-              "learnMore": "Apprends en plus ici"
-          }
-      },
-      "about": {
-          "bettor": {
-              "experienceBettor": "Es tu un parieur expérimenté?",
-              "helpCommunity": "Aide la communauté en vendant ton expertise",
-              "list": {
-                  "1": "Impossible de prendre des screenshots, plus de fuite de données!",
-                  "2": "Éttend ta communauté en utilisant la meilleure expérience utilisateur",
-                  "3": "Un incroyable dashboard. Accessible depuis ton ordinateur ou ton smartphone",
-                  "4": "Completement sécurisé avec les dernières technologies"
-              }
-          },
-          "headline": {
-              "ready": "Prêt à parier?",
-              "weAreWaiting": "Nous t'attendons."
-          },
-          "user": {
-              "wantToBet": "Tu veux te mettre à parier?",
-              "hereToHelp": "Nous sommes là pour t'aider!",
-              "list": {
-                  "1": "Les derniers paris disponible des meilleurs professionnels",
-                  "2": "Plus jamais de blabla! Nous faisons des analyses statistiques indépendantes",
-                  "3": "Une application mobile facile et agréable à utiliser"
-              }
-          }
-      }
-  }
+    "components": {
+        "header": {
+            "home": "Acceuil",
+            "results": "Résultats",
+            "about": "À propos"
+        },
+        "bet": {
+            "odds": "côte",
+            "vs": "vs",
+            "sports": {
+                "football": "Football",
+                "basketball": "Basketball",
+                "Tennis": "Tennis"
+            },
+            "result": {
+                "total": "Nombre total {count} de but | Nombre total de {count} buts",
+                "corner": "{name} marque le plus de corners"
+            }
+        },
+        "home": {
+            "todayBet": "Le pari du jour | Les paris du jour"
+        },
+        "results": {
+            "headline": {
+                "title": "\"Gambling is not about how well you play the games, it's really about how well you handle your money.\"",
+                "from": "V.P. Pappy"
+            },
+            "pastBet": "Pari passé | Paris passé"
+        },
+        "about": {
+            "whatWeDo": {
+                "whatWeDo": "Nous voulons transformer<br>la manière dont tu paris!"
+            },
+            "bettor": {
+                "experienceBettor": "Es tu un parieur expérimenté?",
+                "helpCommunity": "Aide la communauté en vendant ton expertise",
+                "list": {
+                    "1": "Impossible de prendre des screenshots, plus de fuite de données!",
+                    "2": "Éttend ta communauté en utilisant la meilleure expérience utilisateur",
+                    "3": "Un incroyable dashboard. Accessible depuis ton ordinateur ou ton smartphone",
+                    "4": "Completement sécurisé avec les dernières technologies"
+                }
+            },
+            "headline": {
+                "ready": "Prêt à parier?",
+                "weAreWaiting": "Nous t'attendons."
+            },
+            "user": {
+                "wantToBet": "Tu veux te mettre à parier?",
+                "hereToHelp": "Nous sommes là pour t'aider!",
+                "list": {
+                    "1": "Les derniers paris disponible des meilleurs professionnels",
+                    "2": "Plus jamais de blabla! Nous faisons des analyses statistiques indépendantes",
+                    "3": "Une application mobile facile et agréable à utiliser"
+                }
+            }
+        }
+    }
 }

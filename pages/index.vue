@@ -1,7 +1,5 @@
 <template>
     <div>
-        <HomeWelcome/>
-        <HomeWhatWeDo/>
-        <HomeComingSoon/>
+        <HomeToday/>
     </div>
 </template>
