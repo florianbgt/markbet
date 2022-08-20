@@ -41,7 +41,7 @@ onUnmounted(() => {
     window.removeEventListener("scroll", onScroll)
 })
 
-const locale = (useRoute().name as string).split('-')[0]
+const locale = computed(() => (useRoute().name as string).split('-')[0])
 
 let isVisible = ref(true)
 
