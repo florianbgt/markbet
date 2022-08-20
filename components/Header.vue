@@ -13,7 +13,6 @@
             <div class="grow flex justify-end">
                 <Language />
             </div>
-            {{$route.name}}
         </div>  
     </div>
     <transition name="slidedown">
