@@ -16,10 +16,8 @@ locales.forEach(locale => {
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     target: 'static',
-    nitro: {
-        prerender: {
-            routes
-        }
+    generate: {
+        routes: routes
     },
     modules: [
         '@nuxtjs/tailwindcss',

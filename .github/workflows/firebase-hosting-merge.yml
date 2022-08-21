@@ -21,9 +21,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build nuxt project
-        run: yarn build
-
       - name: Generate static
         run: yarn generate
 
