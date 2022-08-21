@@ -1,19 +1,12 @@
 <template>
-    <div class="flex bg-light justify-center shadow-lg min-h-screen">
-        <div
-            class="container flex flex-col items-center justify-center m-2"
-            data-aos="fade-up"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-        >
-            <p class="text-dark text-center text-title font-bold break-words">
-                {{ $t('components.about.headline.ready') }}
-            </p>
-            <p class="text-primary text-center text-xl font-bold break-words">
-                {{ $t('components.about.headline.weAreWaiting') }}
-            </p>
-        </div>
-    </div>
+    <Screen class="bg-light text-dark">
+        <p class="text-center text-title font-bold break-words">
+            {{ $t('components.about.headline.ready') }}
+        </p>
+        <p class="text-primary text-center text-xl font-bold break-words">
+            {{ $t('components.about.headline.weAreWaiting') }}
+        </p>
+    </Screen>
 </template>
 
 <script setup lang="ts">

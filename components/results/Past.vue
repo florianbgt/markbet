@@ -1,12 +1,7 @@
 <template>
-    <div class="flex bg-primary justify-center shadow-lg min-h-screen">
-        <div
-            class="container flex flex-col items-center justify-center m-2 gap-3"
-            data-aos="fade-up"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-        >
-            <div class="text-title text-light font-bold">
+    <Screen class="text-light" useDynamicBackground>
+        <div class="flex flex-col w-full gap-2">
+            <div class="text-title text-center text-light font-bold">
                 {{$t('components.results.pastBet', bets.length)}}
             </div>
             <Bet
@@ -14,9 +9,9 @@
                 :key="index"
                 :date="bet.date"
                 :bets="bet.bets"
-            />            
-        </div>
-    </div>
+            /> 
+        </div>      
+    </Screen>
 </template>
 
 <script setup lang="ts">
