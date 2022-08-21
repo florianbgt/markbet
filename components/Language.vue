@@ -1,25 +1,23 @@
 <template>
     <div class="relative">
-        <button @click="isOpen = !isOpen" class="bg-light hover:opacity-strong text-lg py-1 pl-2 pr-1 rounded-full">
+        <button @click="isOpen = !isOpen" class="bg-light hover:opacity-strong text-lg p-1 rounded-lg">
             <span :class="`fi fi-${languages[$i18n.locale]}`" />
-            <span class="text-dark font-bold">{{ isOpen ? '&#9650;' : '&#9660;' }}</span>
         </button>
         <transition name="slidedown">
             <div
                 v-if="isOpen"
-                class="origin-top-right absolute top-10 left-0 right-0 mt-2 rounded-md shadow-lg bg-light"
+                class="origin-top-right absolute top-10 left-0 mt-2 rounded-md shadow-lg bg-light"
             >
-                <div class="py-1" role="none">
-                    <button
-                        v-for="(language, key) in languages"
-                        :key="key"
-                        @click="setLanguage(key)"
-                        type="button"
-                        class="hover:opacity-strong text-lg w-full py-1 rounded-full"
-                    >
-                        <span :class="`fi fi-${language}`" />
-                    </button>
-                </div>
+                <NuxtLink
+                    v-for="(language, key) in languages"
+                    :key="key"
+                    :to="switchLocalePath(key)"
+                    @click="isOpen = false"
+                    type="button"
+                    class="hover:opacity-strong text-lg w-full px-1"
+                >
+                    <span :class="`fi fi-${language}`" />
+                </NuxtLink> 
             </div>
         </transition>
     </div>
@@ -31,13 +29,6 @@ const languages = {
     fr: 'fr',
     es: 'es',
     de: 'de',
-}
-
-const setLanguage = (value: 'en' | 'fr' | 'es' | 'de') => {
-    const name: string = useRoute().name as string
-    const currentLocale = name.split('-')[0]
-    useRouter().push({name: name.replace(currentLocale, value)})
-    isOpen.value = false
 }
 
 const isOpen = ref(false)

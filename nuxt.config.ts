@@ -1,12 +1,16 @@
 import { defineNuxtConfig } from 'nuxt'
-import availableLocales from './locales/availableLocales'
 
+const pages = [
+    '/',
+    '/results/',
+    '/about/'
+]
+const locales = ['en', 'fr', 'es', 'de']
 let routes = []
-
-availableLocales.forEach(locale => {
-    routes.push(`/${locale}/`)
-    routes.push(`/${locale}/results/`)
-    routes.push(`/${locale}/about/`)
+locales.forEach(locale => {
+    pages.forEach(page => {
+        routes.push(`/${locale}${page}`)
+    })
 })
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
@@ -17,31 +21,42 @@ export default defineNuxtConfig({
             routes
         }
     },
-    generate: {
-        routes: [
-            '/',
-            '/about',
-        ]
-    },
     modules: [
         '@nuxtjs/tailwindcss',
-        '@intlify/nuxt3',
-        './modules/generate-locale-routes'
+        '@nuxtjs/i18n'
     ],
-    localRoutesGenerator: {
-        availableLocales
-    },
     tailwindcss: {
         cssPath: '~/assets/css/tailwind.css',
         configPath: 'tailwind.config.ts',
     },
-    intlify: {
-        vueI18n: {
-            locale: availableLocales[0],
-            fallbackLocale: availableLocales[0],
-            availableLocales,
-            sync: true
-        }
+    i18n: {
+        locales: [
+            {
+                code: 'en',
+                file: 'en.json',
+            },
+            {
+                code: 'fr',
+                file: 'fr.json',
+            },
+            {
+                code: 'es',
+                file: 'es.json',
+            },
+            {
+                code: 'de',
+                file: 'de.json',
+            },
+        ],
+        lazy: true,
+        langDir: 'locales',
+        defaultLocale: 'en',
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'i18n_redirected',
+            redirectOn: 'root',
+        },
+        strategy: 'prefix',
     },
     css: [
         '~/assets/main.scss',
