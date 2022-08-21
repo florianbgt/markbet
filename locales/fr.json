@@ -19,13 +19,13 @@
             }
         },
         "home": {
-            "todayBet": "Le pari du jour | Les paris du jour"
-        },
-        "results": {
             "headline": {
                 "title": "\"Gambling is not about how well you play the games, it's really about how well you handle your money.\"",
                 "from": "V.P. Pappy"
             },
+            "todayBet": "Le pari du jour | Les paris du jour"
+        },
+        "results": {
             "pastBet": "Pari passé | Paris passé"
         },
         "about": {

@@ -19,13 +19,13 @@
             }
         },
         "home": {
-            "todayBet": "Today's bet | Today's bets"
-        },
-        "results": {
             "headline": {
                 "title": "\"Gambling is not about how well you play the games, it's really about how well you handle your money.\"",
                 "from": "V.P. Pappy"
             },
+            "todayBet": "Today's bet | Today's bets"
+        },
+        "results": {
             "pastBet": "Past bet | Past bets"
         },
         "about": {
