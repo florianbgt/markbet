@@ -14,7 +14,7 @@
                 "Tennis": "Tennis"
             },
             "result": {
-                "total": "Nombre total {count} de but | Nombre total de {count} buts",
+                "total": "{count} but au total | {count} buts au total",
                 "corner": "{name} marque le plus de corners"
             }
         },
@@ -30,7 +30,7 @@
         },
         "about": {
             "whatWeDo": {
-                "whatWeDo": "Nous voulons transformer<br>la manière dont tu paris!"
+                "whatWeDo": "Nous voulons transformer<br>la manière dont tu paries!"
             },
             "bettor": {
                 "experienceBettor": "Es tu un parieur expérimenté?",
