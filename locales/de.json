@@ -1,7 +1,7 @@
 {
     "components": {
         "header": {
-            "home": "Home",
+            "home": "Hauptseite",
             "results": "Results",
             "about": "About us"
         },
