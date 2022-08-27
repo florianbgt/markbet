@@ -1,7 +1,15 @@
 <template>
-    <div class="text-dark w-full max-w-[1000px] border-md border-dark rounded-lg overflow-hidden">
-        <div class="flex items-center justify-between bg-dark px-2">
-            <div class="text-light font-lato text-center text-xl font-bold">
+    <div class="text-dark w-full max-w-[1000px] border-md overflow-hidden shadow-lg">
+        <div class="flex items-center justify-between bg-dark pr-2">
+            <div class="flex items-center text-light font-lato text-center text-xl font-bold">
+                <div class="flex text-light h-full px-1 gap-1">
+                    <font-awesome-icon
+                        v-for="(icon, index) in [...new Set(bets.map(bet => bet.sportIcon))]"
+                        :key="index"
+                        :style="{color: icon === 'futbol' ? 'lightgrey' : icon === 'basketball' ? 'orange' : icon === 'football' ? 'saddlebrown' : 'white'}"
+                        :icon="['fas', icon]"
+                    />
+                </div>
                 {{ bettor }}
             </div>
             <div v-if="bets.length > 1" class="hidden md:block text-xl font-staatliches text-end text-light">
@@ -14,6 +22,7 @@
         <div v-for="(bet, index) in bets" :key="index" class="bg-light p-1 border-b-sm">
             <div class="flex flex-wrap justify-between" style="letter-spacing: 0.5px">
                 <div class="font-staatliches text-xl">
+                    <span :class="`fi fi-${bet.country}`" />
                     {{bet.sport}} -
                     <span class="text-primary">
                         {{bet.competition}}
@@ -67,6 +76,8 @@ defineProps<{
     bettor: string;
     bets: Array<{
         date: Date;
+        country: string;
+        sportIcon: string;
         sport: string;
         competition: string;
         team1: string;

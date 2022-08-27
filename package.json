@@ -8,6 +8,7 @@
     "translations": "vue-i18n-extract report --vueFiles './*(components|pages)/**/*.?(js|ts|vue)' --languageFiles './locales/*(fr|es|de).json'"
   },
   "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27657146.da85542",
     "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
     "@nuxtjs/tailwindcss": "^5.1.3",
     "@types/aos": "^3.0.4",

@@ -21,7 +21,8 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/i18n'
+        '@nuxtjs/i18n',
+        '@nuxt/image-edge',
     ],
     tailwindcss: {
         cssPath: '~/assets/css/tailwind.css',

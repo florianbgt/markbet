@@ -22,27 +22,42 @@ const { t } = useI18n({ useScope: 'global' })
 const bets = [
     {
         bettor: "Best Bite",
-        bets: [{
+        bets: [
+            {
                 date: new Date("2022-05-19T20:00:00Z"),
+                country: 'fr',
+                sportIcon: 'futbol',
                 sport: t('components.bet.sports.football'),
                 competition: "Ligue 1",
                 team1: "Paris Saint Germain",
                 team2: "Olympique de Lyon",
-                category: t('components.bet.result.total'),
+                category: t('components.bet.category.total'),
                 result: 1,
                 odds: 1.25,
-                status: "won",
+            },
+            {
+                date: new Date("2022-05-19T20:00:00Z"),
+                country: 'es',
+                sportIcon: 'futbol',
+                sport: t('components.bet.sports.football'),
+                competition: "Ligue 1",
+                team1: "Paris Saint Germain",
+                team2: "Olympique de Lyon",
+                category: t('components.bet.category.total'),
+                result: 1,
+                odds: 1.25,
             },
             {
                 date: new Date("2022-05-19T21:00:00Z"),
+                country: 'un',
+                sportIcon: 'basketball',
                 sport: t('components.bet.sports.football'),
                 competition: "Ligue 1",
                 team1: "Paris Saint Germain",
                 team2: "Olympique de Lyon",
-                category: t('components.bet.result.total'),
+                category: t('components.bet.category.total'),
                 result: 3,
                 odds: 3,
-                status: "lost",
             }
         ]
     },
@@ -51,14 +66,15 @@ const bets = [
         bets: [
             {
                 date: new Date("2022-05-19T20:00:00Z"),
+                country: 'eu',
+                sportIcon: 'football',
                 sport: t('components.bet.sports.football'),
                 competition: "Ligue 1",
                 team1: "Paris Saint Germain",
                 team2: "Olympique de Lyon",
-                category: t('components.bet.result.corner'),
+                category: t('components.bet.category.corner'),
                 result: 'psg',
                 odds: 2,
-                status: "canceled",
             }
         ]
     }

@@ -10,10 +10,10 @@
                 </p>
             </div>
             <div class="grid grid-cols-2 gap-1">
-                <img src="/foot.png" width="300" alt="logo" />
-                <img src="/basket.png" width="300" alt="logo" />
-                <img src="/tennis.png" width="300" alt="logo" />
-                <img src="/nfl.png" width="300" alt="logo" />
+                <nuxt-img src="/foot.jpg" height="200" width="300" alt="football" />
+                <nuxt-img src="/basket.jpg" height="200" width="300" alt="basketball" />
+                <nuxt-img src="/tennis.jpg" height="200" width="300" alt="tennis" />
+                <nuxt-img src="/nfl.jpg" height="200" width="300" alt="american football" />
             </div>
         </div>
     </Screen> 

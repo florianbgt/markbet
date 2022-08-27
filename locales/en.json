@@ -15,7 +15,7 @@
                 "basketball": "Basketball",
                 "Tennis": "Tennis"
             },
-            "result": {
+            "category": {
                 "total": "Total number of goal",
                 "corner": "Scores the most corners"
             },
