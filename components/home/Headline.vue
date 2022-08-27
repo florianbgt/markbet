@@ -10,10 +10,10 @@
                 </p>
             </div>
             <div class="grid grid-cols-2 gap-1">
-                <nuxt-img src="/foot.jpg" height="200" width="300" alt="football" />
-                <nuxt-img src="/basket.jpg" height="200" width="300" alt="basketball" />
-                <nuxt-img src="/tennis.jpg" height="200" width="300" alt="tennis" />
-                <nuxt-img src="/nfl.jpg" height="200" width="300" alt="american football" />
+                <img src="/foot.jpg" alt="football" />
+                <img src="/basket.jpg" alt="basketball" />
+                <img src="/tennis.jpg" alt="tennis" />
+                <img src="/nfl.jpg" alt="american football" />
             </div>
         </div>
     </Screen> 
@@ -21,3 +21,11 @@
 
 <script setup lang="ts">
 </script>
+
+<style scoped lang="scss">
+img{
+    height: 200px;
+    width: 300px;
+    object-fit: fill;
+}
+</style>

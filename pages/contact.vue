@@ -18,10 +18,10 @@
                 </div>
                 <div class="flex flex-col">
                     <label>Description</label>
-                    <textarea rows="6" maxLength="256">sss</textarea>
+                    <textarea rows="6" maxLength="256"></textarea>
                 </div>
                 <div class="flex justify-center">
-                    <button>
+                    <button type="submit">
                         Submit
                     </button>
                 </div>
