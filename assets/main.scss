@@ -1,6 +1,25 @@
 
 @import 'colors';
 
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    src: local('/Staatliches-Regular.ttf');
+}
+
 html, body, #app{
     background-color: $light;
 }

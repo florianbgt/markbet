@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       black: "#000000",
+      "black-500": "#333333",
       dark: "#0B0C40",
       dark500: "#0B0C59",
       grey: "#808080",
@@ -33,7 +34,9 @@ module.exports = {
       title: "2.5rem",
     },
     fontFamily: {
-      sans: ['Roboto', 'sans-serif'],
+      roboto: ['Roboto'],
+      lato: ['Lato'],
+      Staatliches: ['Staatliches'],
     },
     fontWeight: {
       thin: "200",

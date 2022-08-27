@@ -1,10 +1,12 @@
 <template>
     <div
-        :id="useDynamicBackground ? 'dynamic' : ''"
-        class="flex justify-center shadow-lg min-h-screen"
+        class="flex justify-center shadow-lg bg-black-500"
+        :class="fullScreen ? 'min-h-screen' : ''"
     >
         <div
-            class="container flex flex-col items-center justify-center m-2"
+            :id="useDynamicBackground ? 'dynamic' : ''"
+            class="container flex flex-col items-center justify-center p-2"
+            :class="class"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="1000"
@@ -19,6 +21,8 @@ import { Ref } from 'vue';
 
 defineProps<{
     useDynamicBackground?: boolean;
+    class: string;
+    fullScreen?: boolean;
 }>();
 
 const angle: Ref<number> = ref(0)

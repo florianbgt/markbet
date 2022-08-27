@@ -53,7 +53,7 @@
                 textColor = 'text-dark'
                 break
         }
-        if (!props.external && useRoute().path === props.to) return `${textSize} ${textColor} font-bold font-sans underline`
-        return `${textSize} ${textColor} font-bold font-sans hover:underline`
+        if (!props.external && useRoute().path === props.to) return `${textSize} ${textColor} font-bold underline`
+        return `${textSize} ${textColor} font-bold hover:underline`
     })
 </script>

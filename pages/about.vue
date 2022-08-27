@@ -1,8 +1,8 @@
 <template>
     <div>
-        <AboutWhatWeDo/>
-        <AboutUser/>
-        <AboutBettor/>
-        <AboutHeadline/>
+        <AboutWhatWeDo fullScreen/>
+        <AboutUser fullScreen/>
+        <AboutBettor fullScreen/>
+        <AboutHeadline fullScreen/>
     </div>
 </template>

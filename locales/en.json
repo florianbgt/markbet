@@ -3,9 +3,11 @@
         "header": {
             "home": "Home",
             "results": "Results",
-            "about": "About us"
+            "about": "About us",
+            "contact": "Contact"
         },
         "bet": {
+            "combinedOdds": "Combined odds",
             "odds": "odds",
             "vs": "vs",
             "sports": {
@@ -14,8 +16,8 @@
                 "Tennis": "Tennis"
             },
             "result": {
-                "total": "Total of {count} goal | Total of {count} goals",
-                "corner": "{name} score the most corners"
+                "total": "Total number of goal",
+                "corner": "Scores the most corners"
             }
         },
         "home": {
@@ -23,7 +25,7 @@
                 "title": "\"Gambling is not about how well you play the games, it's really about how well you handle your money.\"",
                 "from": "V.P. Pappy"
             },
-            "todayBet": "Today's bet | Today's bets"
+            "todayBet": "Upcoming bet | Upcoming bets"
         },
         "results": {
             "pastBet": "Past bet | Past bets"

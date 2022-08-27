@@ -1,17 +1,17 @@
 <template>
     <Screen class="text-light" useDynamicBackground>
-        <div class="flex flex-col w-full gap-2">
-            <div class="text-title text-center font-bold">
+        <div class="flex flex-col items-center w-full gap-2">
+            <div class="text-title font-bold">
                 {{$t('components.home.todayBet', bets.length)}}
             </div>
+
             <Bet
                 v-for="(bet, index) in bets"
                 :key="index"
-                :date="bet.date"
+                :bettor="bet.bettor"
                 :bets="bet.bets"
-            />  
-        </div>
-                   
+            /> 
+        </div>                   
     </Screen>
 </template>
 
@@ -22,7 +22,7 @@ const { t } = useI18n({ useScope: 'global' })
 
 const bets = [
     {
-        date: new Date("2022-05-19"),
+        bettor: "Best Bite",
         bets: [
             {
                 date: new Date("2022-05-19T20:00:00Z"),
@@ -30,7 +30,8 @@ const bets = [
                 competition: "Ligue 1",
                 team1: "Paris Saint Germain",
                 team2: "Olympique de Lyon",
-                result: t('components.bet.result.total', {count: 1}),
+                category: t('components.bet.result.total'),
+                result: '1',
                 odds: "1.25"
             },
             {
@@ -39,13 +40,14 @@ const bets = [
                 competition: "Ligue 1",
                 team1: "Paris Saint Germain",
                 team2: "Olympique de Lyon",
-                result: t('components.bet.result.total', {count: 3}),
+                category: t('components.bet.result.total'),
+                result: '3',
                 odds: "3"
             }
         ]
     },
     {
-        date: new Date("2022-05-19"),
+        bettor: "Montanazz",
         bets: [
             {
                 date: new Date("2022-05-19T20:00:00Z"),
@@ -53,7 +55,8 @@ const bets = [
                 competition: "Ligue 1",
                 team1: "Paris Saint Germain",
                 team2: "Olympique de Lyon",
-                result: t('components.bet.result.corner', { name: 'Lyon'}),
+                category: t('components.bet.result.corner'),
+                result: 'psg',
                 odds: "2"
             }
         ]
