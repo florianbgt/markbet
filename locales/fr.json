@@ -1,14 +1,14 @@
 {
     "components": {
         "header": {
-            "home": "Home",
-            "results": "Results",
-            "about": "About us",
+            "home": "Acceuil",
+            "results": "Résultats",
+            "about": "À propos",
             "contact": "Contact"
         },
         "bet": {
-            "combinedOdds": "Combined odds",
-            "odds": "odds",
+            "combinedOdds": "Côte combinée",
+            "odds": "Côte",
             "vs": "vs",
             "sports": {
                 "football": "Football",
@@ -16,13 +16,13 @@
                 "Tennis": "Tennis"
             },
             "category": {
-                "total": "Total number of goal",
-                "corner": "Scores the most corners"
+                "total": "Nombre total de but",
+                "corner": "Marque le plus de corners"
             },
             "status": {
-                "won": "Won",
-                "lost": "Lost",
-                "canceled": "Canceled"
+                "won": "Gagné",
+                "lost": "Perdu",
+                "canceled": "Annulé"
             }
         },
         "home": {
@@ -30,10 +30,10 @@
                 "title": "\"Gambling is not about how well you play the games, it's really about how well you handle your money.\"",
                 "from": "V.P. Pappy"
             },
-            "todayBet": "Upcoming bet | Upcoming bets"
+            "todayBet": "Pari à venir | Paris à venir"
         },
         "results": {
-            "pastBet": "Past bet | Past bets"
+            "pastBet": "Pari passés | Paris passés"
         },
         "about": {
             "whatWeDo": {
