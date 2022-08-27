@@ -36,7 +36,8 @@ module.exports = {
     fontFamily: {
       roboto: ['Roboto'],
       lato: ['Lato'],
-      Staatliches: ['Staatliches'],
+      staatliches: ['Staatliches'],
+      sans: ['sans'],
     },
     fontWeight: {
       thin: "200",

@@ -60,6 +60,7 @@ export default defineNuxtConfig({
         '~/assets/main.scss',
         '~/node_modules/flag-icons/css/flag-icons.min.css',
         '~/node_modules/aos/dist/aos.css',
+        '@fortawesome/fontawesome-svg-core/styles.css'
     ],
     vite: {
         css: {

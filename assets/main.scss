@@ -5,23 +5,24 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local('/Roboto-Regular.ttf');
+    src: local('Roboto-Regular'), url(Roboto-Regular.ttf);
 }
 @font-face {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    src: local('/Lato-Regular.ttf');
+    src: local('Lato-Regular'), url(Lato-Regular.ttf);
 }
 @font-face {
     font-family: 'Staatliches';
     font-style: normal;
     font-weight: 400;
-    src: local('/Staatliches-Regular.ttf');
+    src: local('Staatliches-Regular'), url(Staatliches-Regular.ttf);
 }
 
 html, body, #app{
     background-color: $light;
+    font-family: Roboto;
 }
 
 .page-enter-active,

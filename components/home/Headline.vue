@@ -2,10 +2,10 @@
     <Screen class="bg-dark500 text-light">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div class="flex flex-col items-center justify-center">
-                <p class="text-light text-left text-title font-bold break-words">
+                <p class="text-light text-left text-title font-lato break-words">
                     {{ $t('components.home.headline.title') }}
                 </p>
-                <p class="text-light text-center text-xl font-bold break-words">
+                <p class="text-light text-center text-xl font-lato break-words">
                     {{ $t('components.home.headline.from') }}
                 </p>
             </div>
