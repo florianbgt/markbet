@@ -42,21 +42,6 @@
             </div>
         </div>  
     </div>
-    <transition name="slidedown">
-        <div v-if="!isVisible" class="hidden lg:flex fixed top-0 left-0 right-0 flex justify-center z-50">
-            <div class="container flex items-center mx-1 mt-2">
-                <Link @click="scrollTop()" :to="localePath('index')" variant="light" size="lg" class="mx-1">
-                    {{ $t('components.header.home') }}
-                </Link>
-                <Link @click="scrollTop()" :to="localePath('results')" variant="light" size="lg" class="mx-1">
-                    {{ $t('components.header.results') }}
-                </Link>
-                <Link @click="scrollTop()" :to="localePath('about')" variant="light" size="lg" class="mx-1">
-                    {{ $t('components.header.about') }}
-                </Link>
-            </div>
-        </div>  
-    </transition>
 </template>
 
 <script setup lang="ts">

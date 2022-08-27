@@ -18,6 +18,11 @@
             "result": {
                 "total": "Total number of goal",
                 "corner": "Scores the most corners"
+            },
+            "status": {
+                "won": "Won",
+                "lost": "Lost",
+                "canceled": "Canceled"
             }
         },
         "home": {
