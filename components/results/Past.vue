@@ -33,6 +33,7 @@ const bets = [
                 team2: "Olympique de Lyon",
                 category: t('components.bet.category.total'),
                 result: 1,
+                status: "won",
                 odds: 1.25,
             },
             {
@@ -45,6 +46,7 @@ const bets = [
                 team2: "Olympique de Lyon",
                 category: t('components.bet.category.total'),
                 result: 1,
+                status: "lost",
                 odds: 1.25,
             },
             {
@@ -58,6 +60,7 @@ const bets = [
                 category: t('components.bet.category.total'),
                 result: 3,
                 odds: 3,
+                status: "canceled",
             }
         ]
     },
@@ -75,6 +78,7 @@ const bets = [
                 category: t('components.bet.category.corner'),
                 result: 'psg',
                 odds: 2,
+                status: "won"
             }
         ]
     }
