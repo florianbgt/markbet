@@ -8,6 +8,7 @@
             :data-aos="`fade-${['up', 'down', 'left', 'right'][Math.floor(Math.random()*4)]}`"
             data-aos-delay="500"
             data-aos-duration="1000"
+            class="flex flex-col justify-center items-center w-full"
         >
             <slot />
         </div>
