@@ -1,7 +1,11 @@
 <template>
-  <div class="main-wrapper bg-black">
-    <Header/>
-    <NuxtPage />
+  <div>
+    <div class="bg-black-500 flex justify-center shaddow-lg">
+      <div class="container">
+        <Header/>
+        <NuxtPage />
+      </div> 
+    </div>
     <Footer/>
   </div>
 </template>
