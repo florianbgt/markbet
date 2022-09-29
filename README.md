@@ -3,34 +3,30 @@
 Simple matketing static website build with nuxt 3
 https://v3.nuxtjs.org/
 
-Can find the production version running here:
+# Dependencies
 
-https://liveyourbet.com
-
-## dependencies
-
-Require nodejs 16
-https://nodejs.org/en/
-
-## Setup
-
-To install the dependencies:
+Node 16 and up https://nodejs.org/en/
+Once node is installed:
 
 ```bash
+npm install -g yarn
+```
+
+# Install all Dependencies
+
+```sh
 yarn install
 ```
 
-## Development Server
-
-Start the development server:
+## Run locally
 
 ```bash
 yarn dev
 ```
 
-## Production
+## Build for production
 
-Build the application for production:
+Build the application for production (full static):
 
 ```bash
 yarn generate
